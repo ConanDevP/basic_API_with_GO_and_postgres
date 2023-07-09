@@ -14,4 +14,6 @@ func RoutePerson(mux *http.ServeMux, storage Storage){
 	mux.HandleFunc("/v1/persons/create", h.create)//registramos el handler dentro del mux y la ruta
 	mux.HandleFunc("/v1/persons/getall",h.getAll)//agregamos el endpoint para obtener todos los registros
 	mux.HandleFunc("/v1/persons/update",h.update)
+	mux.HandleFunc("/v1/persons/delete",h.delete)
+
 }

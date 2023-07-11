@@ -141,4 +141,6 @@ func (p *person) delete(w http.ResponseWriter, r *http.Request) {
 	respose := NewResponse(Message, "ok", nil)
 	responseJSON(w, http.StatusOK, respose)
 
+
+
 }
